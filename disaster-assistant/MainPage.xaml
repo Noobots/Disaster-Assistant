@@ -25,16 +25,16 @@
             <SplitView.Pane>
                 
             <ListBox Name="IconsListBox" SelectionChanged="IconsListBox_SelectionChanged" SelectionMode="Single">
-                <ListBoxItem Name="Choice1">
+                <ListBoxItem Name="HomeIcon">
                     <StackPanel Orientation="Horizontal">
                         <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE10F;" FontSize="36"/>
-                        <TextBlock Margin="20,0,0,0" Text="Choice1" FontSize="24"/>
+                        <TextBlock Margin="20,0,0,0" Text="HomeIcon" FontSize="24"/>
                     </StackPanel>
                 </ListBoxItem>
-                    <ListBoxItem Name="Choice2">
+                    <ListBoxItem Name="Disaster">
                     <StackPanel Orientation="Horizontal">
-                        <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE09B;" FontSize="36"/>
-                        <TextBlock Margin="20,0,0,0" Text="Choice2" FontSize="24"/>
+                        <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE09B;" FontSize="36" />
+                        <TextBlock Margin="20,0,0,0" Text="Disasters" FontSize="24" />
                     </StackPanel>
                 </ListBoxItem>
                 <ListBoxItem>
