@@ -6,8 +6,137 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBlock Text="Earthquake"/>
+        </Grid.RowDefinitions>
+        <RelativePanel>
+            <Button Name="HamburgerButton" FontFamily="Segoe MDL2 Assets" Content="&#xE700;" FontSize="36" Click="HamburgerButton_Click" VerticalAlignment="Stretch"/>
+        </RelativePanel>
+        <SplitView 
+            Name="MySplitView" 
+            Grid.Row="1" 
+            DisplayMode="CompactInline"
+            OpenPaneLength="200"
+            CompactPaneLength="56"
+            HorizontalAlignment="Left">
+            <SplitView.Pane>
+
+                <ListBox Name="IconsListBox" SelectionChanged="IconsListBox_SelectionChanged" SelectionMode="Single">
+                    <ListBoxItem Name="HomeIcon">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE10F;" FontSize="36"/>
+                            <TextBlock Margin="20,0,0,0" Text="Homedis" FontSize="24"/>
+                        </StackPanel>
+                    </ListBoxItem>
+                    <ListBoxItem Name="Choice2">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE09B;" FontSize="36"/>
+                            <TextBlock Margin="20,0,0,0" Text="Disasters" FontSize="24"/>
+                        </StackPanel>
+                    </ListBoxItem>
+                    <ListBoxItem>
+                    </ListBoxItem>
+                </ListBox>
+            </SplitView.Pane>
+            <SplitView.Content>
+                <Grid Name="earthq" Width="1444">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="80" />
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="EARTHQUAKES" Grid.Row="0" FontSize="36" FontFamily="Sitka Heading" Margin="600,0,0,0"/>
+                    <TextBlock  Grid.Row="1" FontSize="34" FontFamily="SimSun" Margin="0,0,720,0" Width="700" >
+
+                    <Run Text=" DO'S"/>
+                    <LineBreak/>
+                    <LineBreak/>
+                    <Run Text="1.Anchor overhead lighting fixtures to "/>
+                    <LineBreak/>
+                    <Run Text=" the ceiling."/> 
+                     <LineBreak/>
+                     <Run Text="2.If indoors, drop to the ground; take "/>
+                      <LineBreak/>
+                      <Run Text =" cover under any rigid structure."/>
+                       <LineBreak/>
+                      <Run Text="3.Stay away from glass, windows, outside"/>
+                      <LineBreak/>
+                       <Run Text=" doors and walls and anything that could"/>
+                        <LineBreak/>
+                       <Run Text=" fall."/>
+                       <LineBreak/>
+                        <Run Text="4.If outdoors move away from buildings,"/>
+                       <LineBreak/>
+                        <Run Text=" trees, streetlights and utility wires."/>
+                       <LineBreak/>
+                       <Run Text="5.If in a moving vehicle, stop as "/>
+                        <LineBreak/>
+                       <Run Text=" quickly as safety permits and stay" />
+                        <LineBreak/>
+                        <Run Text=" in the vehicle."/>
+                        <LineBreak/>
+                       <Run Text="6.If trapped under debris cover your"/>
+                        <LineBreak/>
+                        <Run Text=" mouth with a handkerchief or clothing."/>
+                       <LineBreak/>
+                        <Run Text="7.Be aware that the electricity may go out"/>
+                        <LineBreak/>
+                        <Run Text=" or the sprinkler systems or fire alarms "/>
+                       <LineBreak/>
+                        <Run Text=" may turn on."/>
+                       <LineBreak/>
+                        <Run Text="8.Know emergency telephone numbers."/>
+                    </TextBlock >
+                    <TextBlock Grid.Row="1" Margin="720,0,0,0"  FontSize="34" FontFamily="SimSun" Width="700" >
+                    <Run Text=" DON'TS"/>
+                    <LineBreak/>
+                    <LineBreak/>
+                    <Run Text="1.Don't panic. Keep calm and keep "/>
+                    <LineBreak/>
+                    <Run Text=" others calm."/>
+                    <LineBreak/>
+                    <Run Text="2.If indoors, never use the lifts; keep "/>
+                    <LineBreak/>
+                    <Run Text =" well away from chimneys"/>
+                    <LineBreak/>
+                    <Run Text="3.Do not run and do not wander"/>
+                    <LineBreak/>
+                    <Run Text=" round the streets."/>
+                    <LineBreak/>
+                    <Run Text="4.Do not smoke and do not light matches"/>
+                       <LineBreak/>
+                     <Run Text=" or use a cigarette lighter. Do not turn "/>
+                    <LineBreak/>
+                    <Run Text=" on switches. There may be gas leaks or "/>
+                     <LineBreak/>
+                      <Run Text=" short-circuits."/>
+                    <LineBreak/>
+                    <Run Text="5.Do not drink water from open  "/>
+                    <LineBreak/>
+                    <Run Text=" containers without having examined it. " />
+                    <LineBreak/>
+                    <Run Text="6.Do not re-enter badly damaged "/>
+                    <LineBreak/>
+                    <Run Text=" buildings and do not go near damaged "/>
+                    <LineBreak/>
+                    <Run Text=" structures."/>
+                    <LineBreak/>
+                    <Run Text="7.Avoid roads, bridges, or ramps that "/>
+                    <LineBreak/>
+                    <Run Text=" might have been damaged by the "/>
+                    <LineBreak/>
+                    <Run Text=" earthquake."/>
+                    <LineBreak/>
+                    <Run Text="8.If trapped under debris, do not "/>
+                      <LineBreak/>
+                     <Run Text=" move about or kick up dust."/>
+                    </TextBlock>
+                </Grid>
+
+
+            </SplitView.Content>
+        </SplitView>
     </Grid>
 </Page>

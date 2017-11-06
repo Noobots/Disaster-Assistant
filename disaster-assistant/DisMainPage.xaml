@@ -46,7 +46,6 @@
                 <Grid x:Name="content1" Width="1444">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="238"/>
-
                         <RowDefinition Height="238"/>
                         <RowDefinition Height="238"/>
                         <RowDefinition Height="238"/>

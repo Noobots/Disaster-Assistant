@@ -26,5 +26,23 @@ namespace disaster_assistant
         {
             this.InitializeComponent();
         }
+        private void HamburgerButton_Click(object sender, RoutedEventArgs e)
+        {
+            MySplitView.IsPaneOpen = !MySplitView.IsPaneOpen;
+        }
+        private void IconsListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (HomeIcon.IsSelected)
+            {
+                this.Frame.Navigate(typeof(MainPage), null);
+            }
+            if(Choice2.IsSelected)
+            {
+                this.Frame.Navigate(typeof(DisMainPage), null);
+            }
+
+        }
+
+      
     }
 }
