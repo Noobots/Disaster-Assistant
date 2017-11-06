@@ -51,7 +51,7 @@
                         <RowDefinition Height="238"/>
                         <RowDefinition Height="238"/>
                     </Grid.RowDefinitions>
-                    <Image x:Name="earth" Grid.Row="0" Margin="0,0,1083,0" Source="Assets/quake.png"  />
+                    <Image x:Name="earth" Grid.Row="0" Margin="0,0,1083,0" Source="Assets/quake.png" Tapped="earth_Tapped" />
                     <Image x:Name="land" Grid.Row="1" Margin="361,0,722,0" Source="Assets/Landslide.png" />
 
 

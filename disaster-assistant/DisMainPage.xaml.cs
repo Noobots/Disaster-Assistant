@@ -39,7 +39,9 @@ namespace disaster_assistant
            
         }
 
-
-
+        private void earth_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Earthquake), null);
+        }
     }
 }

@@ -101,6 +101,9 @@
     <Compile Include="DisMainPage.xaml.cs">
       <DependentUpon>DisMainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Earthquake.xaml.cs">
+      <DependentUpon>Earthquake.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -136,6 +139,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="DisMainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Earthquake.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
