@@ -13,16 +13,16 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
+// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace disaster_assistant
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class DisMainPage : Page
+    public sealed partial class Cyclone : Page
     {
-        public DisMainPage()
+        public Cyclone()
         {
             this.InitializeComponent();
         }
@@ -36,24 +36,13 @@ namespace disaster_assistant
             {
                 this.Frame.Navigate(typeof(MainPage), null);
             }
-           
+            if (Choice2.IsSelected)
+            {
+                this.Frame.Navigate(typeof(DisMainPage), null);
+            }
+
         }
 
-        private void earth_Tapped(object sender, TappedRoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(Earthquake), null);
-        }
-       private void land_Tapped(object sender, TappedRoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(Landslide), null);
-        }
-        private void cyc_Tapped(object sender, TappedRoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(Cyclone), null);
-        }
-        private void flood_Tapped(object sender, TappedRoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(Floods), null);
-        }
+
     }
 }

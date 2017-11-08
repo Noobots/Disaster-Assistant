@@ -95,14 +95,20 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="BlankPage1.xaml.cs">
-      <DependentUpon>BlankPage1.xaml</DependentUpon>
+    <Compile Include="Cyclone.xaml.cs">
+      <DependentUpon>Cyclone.xaml</DependentUpon>
     </Compile>
     <Compile Include="DisMainPage.xaml.cs">
       <DependentUpon>DisMainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Earthquake.xaml.cs">
       <DependentUpon>Earthquake.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Floods.xaml.cs">
+      <DependentUpon>Floods.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Landslide.xaml.cs">
+      <DependentUpon>Landslide.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
@@ -134,7 +140,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="BlankPage1.xaml">
+    <Page Include="Cyclone.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -143,6 +149,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Earthquake.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Floods.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Landslide.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

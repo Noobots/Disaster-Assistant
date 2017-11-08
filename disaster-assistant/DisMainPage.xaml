@@ -51,13 +51,9 @@
                         <RowDefinition Height="238"/>
                     </Grid.RowDefinitions>
                     <Image x:Name="earth" Grid.Row="0" Margin="0,0,1083,0" Source="Assets/quake.png" Tapped="earth_Tapped" />
-                    <Image x:Name="land" Grid.Row="1" Margin="361,0,722,0" Source="Assets/Landslide.png" />
-
-
-                    <Image x:Name="flood" Grid.Row="2" Margin="722,0,361,0" Source="Assets/flood.png"  />
-
-
-                    <Image x:Name="cyclone" Grid.Row="3" Margin="1083,0,0,0"  Source="Assets/cyclone.png" />
+                    <Image x:Name="land" Grid.Row="1" Margin="361,0,722,0" Source="Assets/Landslide.png" Tapped="land_Tapped" />
+                    <Image x:Name="flood" Grid.Row="2" Margin="722,0,361,0" Source="Assets/flood.png"  Tapped="flood_Tapped"/>
+                    <Image x:Name="cyclone" Grid.Row="3" Margin="1083,0,0,0"  Source="Assets/cyclone.png" Tapped="cyc_Tapped" />
 
 
                 </Grid>
