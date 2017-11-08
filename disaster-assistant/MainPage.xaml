@@ -23,23 +23,29 @@
             CompactPaneLength="56"
             HorizontalAlignment="Left">
             <SplitView.Pane>
-                
-            <ListBox Name="IconsListBox" SelectionChanged="IconsListBox_SelectionChanged" SelectionMode="Single">
-                <ListBoxItem Name="HomeIcon">
-                    <StackPanel Orientation="Horizontal">
-                        <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE10F;" FontSize="36"/>
-                        <TextBlock Margin="20,0,0,0" Text="HomeIcon" FontSize="24"/>
-                    </StackPanel>
-                </ListBoxItem>
+
+                <ListBox Name="IconsListBox" SelectionChanged="IconsListBox_SelectionChanged" SelectionMode="Single">
+                    <ListBoxItem Name="HomeIcon">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE10F;" FontSize="36"/>
+                            <TextBlock Margin="20,0,0,0" Text="HomeIcon" FontSize="24"/>
+                        </StackPanel>
+                    </ListBoxItem>
                     <ListBoxItem Name="Disaster">
-                    <StackPanel Orientation="Horizontal">
-                        <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE09B;" FontSize="36" />
-                        <TextBlock Margin="20,0,0,0" Text="Disasters" FontSize="24" />
-                    </StackPanel>
-                </ListBoxItem>
-                <ListBoxItem>
-                </ListBoxItem>
-            </ListBox>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE09B;" FontSize="36" />
+                            <TextBlock Margin="20,0,0,0" Text="Disasters" FontSize="24" />
+                        </StackPanel>
+                    </ListBoxItem>
+                    <ListBoxItem>
+                        <ListBoxItem Name="Login">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE09B;" FontSize="36" />
+                                <TextBlock Margin="20,0,0,0" Text="Login" FontSize="24" />
+                            </StackPanel>
+                        </ListBoxItem>
+                    </ListBoxItem>
+                </ListBox>
             </SplitView.Pane>
             <SplitView.Content>
                 <TextBlock Name ="ContentTextBlock" Text="" />
